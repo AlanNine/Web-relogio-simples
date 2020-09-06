@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Web relogio simples</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="clock">
+            <h2>O horario de agora é</h2>
+            <div id="time">
+                <div><span id="hour">00</span><span>Horas</span></div>
+                <div><span id="minutes">00</span><span>Minutos</span></div>
+                <div><span id="seconds">00</span><span>Segundos</span></div>
+    <script type="text/javascript">
+    function clock(){
+
+        var hours = document.getElementById('hour');
+        var minutes = document.getElementById('minutes');
+        var seconds = document.getElementById('seconds');   
+        var ampm = document.getElementById('seconds');    
+    
+    var h = new Date().getHours();
+    var m = new Date().getMinutes();
+    var s = new Date().getSeconds();
+  
+
+
+
+
+
+    hours.innerHTML = h;
+    minutes.innerHTML = m;
+    seconds.innerHTML = s;
+    }
+
+    var interval = setInterval(clock, 1000);
+        
+    
+    </script>
+            </body>
+</html>
